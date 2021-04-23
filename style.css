@@ -1,0 +1,407 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ------- NAV BAR -------*/
+
+nav {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.holder {
+    display: flex;
+    width: 100%;
+    background-color: #272341;
+    min-height: 9vh;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.logo {
+    padding-top: 5px;
+    width: 120px;
+}
+
+nav li a {
+    font-size: 22px;
+    font-weight: 500;
+    list-style: none;
+    padding-left: 40px;
+    color: white;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a:hover {
+    cursor: pointer;
+    color: #50f2a7;
+    transition: all 0.2;
+}
+
+.nav-list {
+    margin-left: auto;
+}
+
+.nav-list ul {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+/* ------- HOME -------*/
+
+
+.mega-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.title {
+    padding-top: 15%;
+    padding-bottom: 10%;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: left;
+    color: #272341;
+}
+
+.mega-holder .container span {
+    background-image: linear-gradient(135deg, #02aab0, #00cdac);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.know-more {
+    display: block;
+    color: white;
+    border: none;
+    background-image: linear-gradient(135deg, #02aab0, #00cdac);
+    padding: 15px 40px;
+    background-color: #01b6ae;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.outer-box {
+    /* margin-top: 5vh; */
+    margin-bottom: 5vh;
+    position: relative;
+    padding: 2.5px;
+    border: 3.5px solid #01b6ae;
+    transition: all 0.2s ease-in;
+}
+
+.outer-box:hover {
+    cursor: pointer;
+}
+
+.know-more:hover {
+    cursor: pointer;
+    padding: 15px 60px;
+    transition: ease-in-out 0.3s;
+    font-size: 25px;
+}
+
+
+/* ------- MAIN -------*/
+
+.about_me,
+.experience,
+.skills {
+    background-image: linear-gradient(135deg, #02aab0, #00cdac);
+    padding: 30px 200px;
+    color: white;
+    text-align: center;
+    min-height: 90vh;
+    transition: all 0.2s ease;
+}
+
+.section-title {
+    font-size: 45px;
+    text-align: center;
+}
+
+.styled-title {
+    width: 230px;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    text-align: center;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    border-radius: 5px;
+    transition: all 0.2s;
+    background: none;
+    color: white;
+}
+
+/* ------- ABOUT ME -------*/
+
+.about_me .container {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s;
+}
+
+.profile img {
+    width: 60%;
+    border-radius: 15px;
+    /* border: 1px solid black; */
+    box-shadow: 20px 20px 50px 10px rgba(0, 0, 0, 0.377);
+}
+
+.about_me .container p {
+    line-height: 1.5;
+    text-align: justify;
+
+}
+
+.unique-container {
+    padding: 4% 10%;
+}
+
+.about_me .outer-box {
+    width: 30%;
+    padding: 0 2.5px;
+    border: 3.5px solid white;
+    transition: all 0.2s ease-in;
+    margin: 10% auto 0;
+}
+
+.about_me .know-more {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    margin: 3px auto;
+    border: none;
+    padding: 0;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.about_me .know-more p {
+    text-align: center;
+    background-image: linear-gradient(135deg, #02aab0, #00cdac);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+
+.about_me .outer-box:hover {
+    cursor: pointer;
+    width: 40%;
+}
+
+.about_me .know-more:hover {
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    /* font-size: 25px; */
+}
+
+/* ------- EDUCATION -------*/
+
+.education .section-title,
+.education .styled-title {
+    background-image: linear-gradient(135deg, #02aab0, #00cdac);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.education .styled-title {
+    border-left: 5px solid #01b6ae;
+    border-right: 5px solid #01b6ae;
+    margin-bottom: 10%;
+}
+
+.education .certifications .styled-title {
+    width: 350px;
+}
+
+.education p {
+    color: #272341;
+}
+
+.education .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.education .section-holder {
+    width: 50%;
+    /* background-color: orange; */
+    /* border-radius: 5px; */
+    text-align: justify;
+    padding: 0 10px;
+}
+
+.education .seperator {
+    width: 50px;
+}
+
+.education h5,
+.education h4,
+.education h3 {
+    margin: 0;
+    margin-bottom: 1%;
+}
+
+.education h5,
+.education h4 {
+    font-weight: 400;
+}
+
+/* ------- EXPERIENCE -------*/
+.experience .container {
+    display: flex;
+}
+
+/* ------- SKILLS -------*/
+
+.skills {
+    min-height: 80vh;
+    padding: 30px 0;
+}
+
+.skill-holder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills .container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.skills .styled-title:hover {
+    cursor: pointer;
+    width: 300px;
+    margin: 0 auto;
+    background-color: rgba(39, 35, 65, 0.85);
+}
+
+.skills .txt {
+    font-weight: 500;
+    font-size: 22px;
+    min-width: 250px;
+    text-align: left;
+}
+
+.dot-empty,
+.dot-full {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #ececec;
+    margin-top: 10px;
+
+}
+
+.dot-list-holder {
+    margin-top: 0px;
+}
+
+.dot-full {
+    background-color: rgba(39, 35, 65, 0.85);
+}
+
+.dot-list {
+    display: flex;
+    justify-content: center;
+    transform: rotateZ(-270deg);
+}
+
+.skills li {
+    padding-top: 20px;
+    margin-right: 22px;
+}
+
+/* ------ MEDIA QUERRIES ------*/
+
+@media(max-width: 900px) {
+    .nav-list {
+        display: none;
+    }
+
+    .title {
+        font-size: 45px;
+        padding-left: 10%;
+        padding-left: 10%;
+    }
+
+    .about_me,
+    .experience,
+    .skills {
+        padding: 30px 20px;
+        text-align: center;
+        min-height: 90vh;
+        transition: all 0.2s ease;
+    }
+
+
+    .about_me .container,
+    .education .container,
+    .skills .container {
+        flex-direction: column;
+    }
+
+    .education .section-holder {
+        width: 100%;
+    }
+
+    .education .certifications {
+        margin-top: 10%;
+    }
+
+    .dot-empty,
+    .dot-full {
+        width: 22px;
+    }
+
+    .skills .styled-title {
+        margin-top: 10%;
+    }
+
+    .skills .txt {
+        font-size: 20px;
+    }
+
+    .dot-list-holder {
+        margin-top: -9px;
+    }
+
+}
