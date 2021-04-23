@@ -130,6 +130,11 @@ nav li a:hover {
 
 
 /* ------- MAIN -------*/
+body {
+    display: flex;
+    width: 100%;
+    /* background-color: greenyellow; */
+}
 
 .about_me,
 .experience,
@@ -352,7 +357,7 @@ nav li a:hover {
 
 /* ------ MEDIA QUERRIES ------*/
 
-@media(max-width: 900px) {
+@media(max-width: 600px) {
     .nav-list {
         display: none;
     }
