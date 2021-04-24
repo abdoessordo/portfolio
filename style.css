@@ -235,6 +235,8 @@ body {
 
 /* ------- EDUCATION -------*/
 
+.projects .styled-title,
+.projects .section-title,
 .education .section-title,
 .education .styled-title {
     background-image: linear-gradient(135deg, #02aab0, #00cdac);
@@ -243,11 +245,13 @@ body {
     color: transparent;
 }
 
+.projects .styled-title,
 .education .styled-title {
     border-left: 5px solid #01b6ae;
     border-right: 5px solid #01b6ae;
     margin-bottom: 10%;
 }
+
 
 .education .certifications .styled-title {
     width: 350px;
@@ -280,7 +284,7 @@ body {
     transition: all .5s ease;
 }
 
-
+.projects h5,
 .education h5,
 .education h4,
 .education h3 {
@@ -288,14 +292,57 @@ body {
     margin-bottom: 1%;
 }
 
-.education h5,
-.education h4 {
+
+h5,
+h4 {
     font-weight: 400;
 }
 
 /* ------- EXPERIENCE -------*/
 .experience .container {
     display: flex;
+}
+
+/* ------- PROJECTS -------*/
+.projects .section-title {
+    margin-bottom: 10%;
+}
+
+.projects .sub-project {
+    display: flex;
+    box-shadow: 10px 10px 50px -20px rgba(0, 0, 0, 0.377);
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+.projects .styled-title {
+    width: 500px;
+    margin: 0;
+}
+
+.projects .soduku {
+    width: 300px;
+}
+
+.projects .text {
+    text-align: justify;
+}
+
+.projects .project-img {
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    padding-right: 20px;
+}
+
+.projects .project-img img {
+    width: 200px;
+}
+
+
+.projects h5 {
+    margin-top: 2%;
 }
 
 /* ------- SKILLS -------*/
@@ -361,9 +408,11 @@ body {
     margin-right: 22px;
 }
 
+/* ------- FOOTER ------ */
+
 footer {
     width: 100%;
-    min-height: 30vh;
+    min-height: 50vh;
     background-color: #272341;
     color: white;
 }
@@ -372,7 +421,7 @@ footer .container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 30vh;
+    height: 50vh;
     align-items: center;
 }
 
@@ -412,7 +461,7 @@ footer .social-media div {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    margin: 10px 20px;
+    margin: 30px 20px;
 }
 
 footer .quick-links {
