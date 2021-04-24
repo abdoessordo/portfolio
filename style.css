@@ -89,6 +89,7 @@ nav li a:hover {
     color: #272341;
 }
 
+.about_me .outer-box .holder i,
 .mega-holder .container span {
     background-image: linear-gradient(135deg, #02aab0, #00cdac);
     -webkit-background-clip: text;
@@ -192,12 +193,36 @@ body {
 }
 
 .about_me .outer-box {
+    display: flex;
+    justify-content: center;
     width: 30%;
-    padding: 0 2.5px;
     border: 3.5px solid white;
     transition: all 0.2s ease-in;
     margin: 10% auto 0;
 }
+
+.about_me .outer-box .holder {
+    justify-content: space-around;
+    min-height: fit-content;
+    padding: 0 2.5px;
+    background-color: white;
+}
+
+.about_me .outer-box .holder a,
+.about_me .outer-box .holder p {
+    margin: 0;
+}
+
+.about_me .outer-box .external {
+    display: flex;
+    align-items: center;
+}
+
+.about_me .outer-box .holder i {
+    transform: translateY(-8%);
+}
+
+
 
 .about_me .know-more {
     background: white;
