@@ -204,13 +204,12 @@ body {
 .about_me .outer-box .holder {
     justify-content: space-around;
     min-height: fit-content;
-    padding: 0 2.5px;
     background-color: white;
 }
 
 .about_me .outer-box .holder a,
 .about_me .outer-box .holder p {
-    margin: 0;
+    /* margin: 0; */
 }
 
 .about_me .outer-box .external {
@@ -229,8 +228,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 50px;
-    margin: 3px auto;
     border: none;
     padding: 0;
     transition: all 0.3s ease;
@@ -252,8 +249,13 @@ body {
     width: 40%;
 }
 
-.about_me .know-more:hover {
-    cursor: pointer;
+.about_me a {
+    display: flex;
+    width: 100%;
+}
+
+.about_me a :hover {
+    /* width: 40%; */
     transition: ease-in-out 0.3s;
     /* font-size: 25px; */
 }
