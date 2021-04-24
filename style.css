@@ -131,7 +131,7 @@ nav li a:hover {
 
 /* ------- MAIN -------*/
 body {
-    display: flex;
+    /* display: flex; */
     width: 100%;
     /* background-color: greenyellow; */
 }
@@ -361,6 +361,90 @@ body {
     margin-right: 22px;
 }
 
+footer {
+    width: 100%;
+    min-height: 30vh;
+    background-color: #272341;
+    color: white;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30vh;
+    align-items: center;
+}
+
+footer .social-media {
+    display: flex;
+}
+
+footer .social-media i {
+    color: white;
+}
+
+.fa-linkedin:hover {
+    color: #0077b5;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+.fa-facebook:hover {
+    color: #4267B2;
+}
+
+.fa-instagram:hover {
+    color: #E1306C;
+}
+
+.fa-github:hover {
+    color: #4078c0;
+}
+
+footer .social-media div {
+    background-color: #00cdac;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 10px 20px;
+}
+
+footer .quick-links {
+    margin-top: auto;
+}
+
+footer .quick-links ul {
+    display: flex;
+}
+
+footer .quick-links li a {
+    color: white;
+    transition: all 0.2s ease;
+}
+
+footer .quick-links li a:hover {
+    color: #50f2a7;
+    font-size: 22px;
+    transition: all 0.2s ease;
+}
+
+footer .quick-links ul .seperator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    transform: translateY(50%);
+    margin: 0 10px;
+}
+
+
+
 /* ------ MEDIA QUERRIES ------*/
 
 @media(max-width: 600px) {
@@ -370,7 +454,6 @@ body {
 
     .title {
         font-size: 45px;
-        padding-left: 10%;
         padding-left: 10%;
     }
 
