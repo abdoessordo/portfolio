@@ -95,6 +95,7 @@ nav li a:hover {
     color: #272341;
 }
 
+.abdo,
 .about_me .outer-box .holder i,
 .mega-holder .container span {
     background-image: linear-gradient(135deg, #02aab0, #00cdac);
@@ -449,23 +450,26 @@ h4 {
 /* ------- FOOTER ------ */
 
 footer {
-    width: 100%;
-    height: 30vh;
+    /* width: 100%; */
+    /* min-height: 30vh; */
     background-color: #272341;
     color: white;
+    /* padding: 0 10%; */
+}
+
+.wrapper {
+    padding: 0 10%;
 }
 
 footer .container {
     display: flex;
-    flex-direction: column;
     width: 100%;
     height: 100%;
-    align-items: center;
+    /* align-items: center; */
+    justify-content: space-between;
+
 }
 
-footer .social-media {
-    display: flex;
-}
 
 footer .social-media i {
     color: white;
@@ -491,24 +495,27 @@ footer .social-media i {
     color: #4078c0;
 }
 
-footer .social-media div {
+footer .social-media .socialmedia-list div {
     background-color: #00cdac;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     margin: 30px 20px;
 }
 
-footer .quick-links {
-    margin-top: auto;
+
+footer .contact-me .contact-me-title {
+    display: flex;
+    justify-content: center;
 }
 
-footer .quick-links ul {
-    display: flex;
+footer .quick-links li {
+    margin-bottom: 10%;
 }
+
 
 footer .quick-links li a {
     color: white;
@@ -530,6 +537,18 @@ footer .quick-links ul .seperator {
     margin: 0 10px;
 }
 
+footer .end {
+    padding: 0 26%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1f1c33;
+    height: 60px;
+}
+
+.abdo {
+    font-weight: 600;
+}
 
 
 /* ------ MEDIA QUERRIES ------*/
@@ -624,11 +643,25 @@ footer .quick-links ul .seperator {
     }
 
     /* FOOTER */
+    footer .container {
+        flex-direction: column;
+    }
+
     footer .fa-2x {
         font-size: 1.5em;
     }
 
-    footer .social-media div {
+    footer .contact-me .contact-me-title {
+        justify-content: flex-start;
+    }
+
+    footer .social-media .socialmedia-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    footer .social-media .socialmedia-list div {
         width: 50px;
         height: 50px;
         margin: 30px 10px;
@@ -648,6 +681,25 @@ footer .quick-links ul .seperator {
         padding: 0;
         margin-bottom: 10%;
 
+    }
+
+    footer .end {
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0 5%;
+        height: 90px;
+    }
+
+    footer .adresse {
+        text-align: center;
+    }
+
+    footer .end div {
+        text-align: center;
+    }
+
+    footer .quick-links li {
+        margin-bottom: 5%;
     }
 
     .skills .txt {
