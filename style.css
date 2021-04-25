@@ -43,8 +43,8 @@ a {
 }
 
 nav li a {
-    font-size: 22px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
     list-style: none;
     padding-left: 40px;
     color: white;
@@ -204,7 +204,7 @@ body {
 
 .about_me .outer-box .holder {
     justify-content: space-around;
-    min-height: 5vh;
+    min-height: 7vh;
     background-color: white;
 }
 
@@ -434,7 +434,7 @@ h4 {
 
 footer {
     width: 100%;
-    min-height: 50vh;
+    min-height: 40vh;
     background-color: #272341;
     color: white;
 }
