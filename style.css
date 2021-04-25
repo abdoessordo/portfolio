@@ -587,6 +587,11 @@ footer .quick-links ul .seperator {
         margin-top: 8px;
     }
 
+    .skills .container {
+        padding: 0;
+        padding-left: 5%;
+    }
+
     .skills .styled-title {
         margin: 10% auto;
         /* width: 80%; */
@@ -619,7 +624,7 @@ footer .quick-links ul .seperator {
 
     .projects .sub-project .styled-title {
         font-size: 1.2rem;
-        width: 400px;
+        width: 100%;
     }
 
     /* FOOTER */
@@ -650,7 +655,7 @@ footer .quick-links ul .seperator {
     }
 
     .skills .txt {
-        min-width: 180px;
+        min-width: 120px;
         transform: translateY(-9%);
     }
 
@@ -668,6 +673,15 @@ footer .quick-links ul .seperator {
 
     .skills .dot-list-holder li {
         margin-right: 25px;
+    }
+
+    .about_me .outer-box,
+    .about_me .outer-box:hover {
+        width: 60%;
+    }
+
+    .projects .project-img img {
+        width: 100px;
     }
 
 }
