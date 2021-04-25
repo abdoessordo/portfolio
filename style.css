@@ -538,7 +538,7 @@ footer .quick-links ul .seperator {
 
 /* ------ MEDIA QUERRIES ------*/
 
-@media(max-width: 600px) {
+@media(max-width: 960px) {
     .nav-list {
         display: none;
     }
@@ -655,7 +655,7 @@ footer .quick-links ul .seperator {
     }
 
     .skills .txt {
-        min-width: 120px;
+        min-width: 150px;
         transform: translateY(-9%);
     }
 
@@ -684,4 +684,63 @@ footer .quick-links ul .seperator {
         width: 100px;
     }
 
+}
+
+@media(max-width: 1200px) {
+    .skills {
+        padding: 30px 20px;
+        text-align: center;
+        min-height: 90vh;
+        transition: all 0.2s ease;
+    }
+
+    .skills .container {
+        flex-direction: column;
+    }
+
+    .dot-empty,
+    .dot-full {
+        width: 20px;
+        height: 20px;
+        margin-top: 8px;
+    }
+
+    .skills .container {
+        padding: 0;
+        padding-left: 5%;
+    }
+
+    .skills .styled-title {
+        margin: 10% auto;
+        /* width: 80%; */
+    }
+
+    .skills .txt li {
+        margin: 0;
+    }
+
+    .skills .dot-list {
+        margin: 0 auto;
+    }
+
+    .skills .txt {
+        font-size: 20px;
+    }
+
+    .skills .txt ul {
+        margin: 0
+    }
+
+    .skills .txt {
+        min-width: 150px;
+        transform: translateY(-9%);
+    }
+
+    .skills .dot-list-holder li {
+        margin-right: 25px;
+    }
+
+    .dot-list-holder {
+        margin-top: 30px;
+    }
 }
